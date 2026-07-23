@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-A polished, browser-based Pomodoro timer built with plain HTML, CSS, and JavaScript. It helps you stay focused by cycling through work sessions and breaks, with a modern interface and simple controls.
+A polished, browser-based Pomodoro timer built with plain HTML, CSS, and JavaScript. It helps you stay focused by cycling through work sessions and short or long breaks with a clean, modern interface.
 
 ## Features
 
@@ -15,25 +15,25 @@ A polished, browser-based Pomodoro timer built with plain HTML, CSS, and JavaScr
 ## How to Use
 
 1. Open the project in a browser.
-2. Click Start to begin a work session.
+2. Click Start to begin a focused work session.
 3. Use Pause or Reset whenever needed.
-4. Adjust the session timings in the settings section to match your preferred workflow.
-5. After each work session, the app automatically switches to a break session.
+4. Adjust the session durations in the settings section to fit your preferred workflow.
+5. After each work session, the app automatically switches to the next break session.
 
 ## Project Structure
 
 - index.html: Main page structure
-- style.css: Styling and responsive layout
+- style.css: Styling, layout, and responsive design
 - script.js: Timer logic, session transitions, settings, and sound playback
 - sounds/bell.mp3: Audio file played at session completion
 
 ## Customization
 
-You can change the default timer values by editing the settings form in the app or by modifying the default values in the JavaScript file.
+You can change the default timer values directly in the app using the settings form, or update the default values in the JavaScript file if you want a permanent change.
 
 ## Running Locally
 
-You can open index.html directly in a browser, or serve the folder with a simple local server if you prefer.
+You can open index.html directly in a browser, or serve the folder with a simple local server.
 
 Example:
 
@@ -46,3 +46,7 @@ Then visit http://127.0.0.1:8000/ in your browser.
 ## Notes
 
 The timer uses the browser’s audio playback support, so the bell sound may require one initial interaction before it plays automatically.
+
+## Purpose
+
+This project is a simple productivity tool for practicing focused work intervals and managing breaks effectively.
