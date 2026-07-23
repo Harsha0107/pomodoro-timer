@@ -4,60 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-
-        <h1>🍅 Pomodoro Timer</h1>
-
-        <div class="session-info">
-            <h3>Current Session</h3>
-            <p id="session-type">Work</p>
+        <div class="hero">
+            <p class="eyebrow">Focus mode</p>
+            <h1>🍅 Pomodoro Timer</h1>
+            <p class="subtitle">Work deeply, rest intentionally, and keep momentum going.</p>
         </div>
 
-        <div class="timer">
-            <h2 id="time">25:00</h2>
-        </div>
+        <div class="session-card">
+            <div class="session-meta">
+                <span class="pill" id="session-type">Work</span>
+                <span class="counter-pill">Completed: <strong id="completed-sessions">0</strong></span>
+            </div>
 
-        <div class="counter">
-            <h3>Completed Work Sessions</h3>
-            <p id="completed-sessions">0</p>
-        </div>
+            <div class="timer-wrap">
+                <div class="progress-ring" id="progress-ring"></div>
+                <h2 id="time">25:00</h2>
+            </div>
 
-        <div class="buttons">
-            <button id="start-btn">Start</button>
-            <button id="pause-btn">Pause</button>
-            <button id="resume-btn">Resume</button>
-            <button id="reset-btn">Reset</button>
+            <p id="status-message" class="status-message">Press start to begin your focus session.</p>
+
+            <div class="buttons">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+                <button id="skip-btn" class="secondary">Skip</button>
+            </div>
         </div>
 
         <div class="settings">
-            <h2>Default Settings</h2>
+            <h2>Session Settings</h2>
 
-            <div class="setting">
-                <span>Work Session</span>
-                <span>25 Minutes</span>
-            </div>
+            <label class="setting">
+                <span>Work (minutes)</span>
+                <input id="work-input" type="number" min="1" max="90" value="25">
+            </label>
 
-            <div class="setting">
-                <span>Short Break</span>
-                <span>5 Minutes</span>
-            </div>
+            <label class="setting">
+                <span>Short break (minutes)</span>
+                <input id="short-break-input" type="number" min="1" max="30" value="5">
+            </label>
 
-            <div class="setting">
-                <span>Long Break</span>
-                <span>15 Minutes</span>
-            </div>
+            <label class="setting">
+                <span>Long break (minutes)</span>
+                <input id="long-break-input" type="number" min="1" max="60" value="15">
+            </label>
+
+            <button id="apply-settings-btn" class="secondary full-width">Apply Settings</button>
         </div>
-
     </div>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
